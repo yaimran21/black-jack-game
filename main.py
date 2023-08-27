@@ -1,5 +1,5 @@
 import random
-
+from logo import logo
 def calculate_score(cards):
     if sum(cards) == 21 and len(cards) == 2:
         return 0
@@ -33,6 +33,7 @@ def compare(user_score, computer_score):
 
 
 def play_game():
+    print(logo)
     is_game_over = False
     user_cards = []
     computer_cards = []
